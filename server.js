@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const Docker = require('dockerode');
@@ -13,7 +12,7 @@ let currentPort = PORT_RANGE_START;
 app.use(bodyParser.json());
 
 app.post('/register', async (req, res) => {
-  const { repoUrl } = req.body; // Changed to repoUrl to match the cURL command
+  const { repoUrl } = req.body; 
   if (!repoUrl) {
       return res.status(400).json({ error: 'GitHub repo URL is required' });
   }

@@ -12,8 +12,8 @@ This project provides an API to register services by specifying a GitHub reposit
 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd service-registration
+git clone https://github.com/kovoor/service-api.git
+cd web-hosting-service
 ```
 
 2. Install Dependencies
